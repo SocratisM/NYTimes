@@ -39,48 +39,50 @@ extension CoreDataStack {
     
     //MARK: Add bookmark
     public func addToBookmarks(story: StoryProtocol) -> Bool {
-        if let bookmarkedStoryEntity = NSEntityDescription.insertNewObject(forEntityName: "BookmarkedStory", into: getContext()) as? BookmarkedStory {
-            bookmarkedStoryEntity.title = story.title
-            bookmarkedStoryEntity.published_date = story.published_date
-            bookmarkedStoryEntity.imgUrl = story.imgUrl
-            bookmarkedStoryEntity.item_type = story.item_type
-            bookmarkedStoryEntity.abstract = story.abstract
-            bookmarkedStoryEntity.storyLink = story.storyLink
-            do {
-                try getContext().save()
-                return true
-            } catch let error {
-                debugPrint(error)
-                return false
-            }
-        }
+//        if let bookmarkedStoryEntity = NSEntityDescription.insertNewObject(forEntityName: "BookmarkedStory", into: getContext()) as? BookmarkedStory {
+//            bookmarkedStoryEntity.title = story.title
+//            bookmarkedStoryEntity.published_date = story.published_date
+//            bookmarkedStoryEntity.imgUrl = story.imgUrl
+//            bookmarkedStoryEntity.item_type = story.item_type
+//            bookmarkedStoryEntity.abstract = story.abstract
+//            bookmarkedStoryEntity.storyLink = story.storyLink
+//            do {
+//                try getContext().save()
+//                return true
+//            } catch let error {
+//                debugPrint(error)
+//                return false
+//            }
+//        }
         return false
     }
     
     //MARK: Remove bookmark
     public func removeBookmark( story: StoryProtocol) -> Bool {
-        do {
-            let result = try getContext().fetch(bookmarkRequest(storyTitle: story.title))
-            let resultData = result as! [BookmarkedStory]
-            
-            for object in resultData {
-                getContext().delete(object)
-            }
-        }
-        catch let error as NSError  {
-            //Todo: handle error
-            print("Could not fetch bookmark \(error), \(error.userInfo)")
-            return false
-        }
-        do {
-            try getContext().save()
-            //print("Bookmark Removed")
-            return true
-        } catch let error as NSError  {
-            //Todo: handle error
-            print("Could not delete \(error), \(error.userInfo)")
-            return false
-        }
+//        do {
+//            let result = try getContext().fetch(bookmarkRequest(storyTitle: story.title))
+//            let resultData = result as! [BookmarkedStory]
+//
+//            for object in resultData {
+//                getContext().delete(object)
+//            }
+//        }
+//        catch let error as NSError  {
+//            //Todo: handle error
+//            print("Could not fetch bookmark \(error), \(error.userInfo)")
+//            return false
+//        }
+//        do {
+//            try getContext().save()
+//            //print("Bookmark Removed")
+//            return true
+//        } catch let error as NSError  {
+//            //Todo: handle error
+//            print("Could not delete \(error), \(error.userInfo)")
+//            return false
+//        }
+		
+		return false
     }
     
     //MARK: Fetch all bookmarks

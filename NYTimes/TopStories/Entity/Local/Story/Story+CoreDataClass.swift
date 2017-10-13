@@ -7,7 +7,6 @@
 
 import Foundation
 import CoreData
-import RealmSwift
 
 public class Story: NSManagedObject {
 

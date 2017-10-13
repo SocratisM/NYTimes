@@ -50,6 +50,7 @@
 		EA53B8761F84CE9F00A08A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA53B8581F84CE6E00A08A13 /* LaunchScreen.storyboard */; };
 		EA53B8781F84CEA500A08A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA53B8571F84CE6E00A08A13 /* Assets.xcassets */; };
 		EA82ADEB1F83B6DC000D2E19 /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82ADEA1F83B6DC000D2E19 /* NYTimesTests.swift */; };
+		EACBB1B31F91064C00A72AFC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1B21F91064C00A72AFC /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		EA82ADE61F83B6DC000D2E19 /* NYTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA82ADEA1F83B6DC000D2E19 /* NYTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTests.swift; sourceTree = "<group>"; };
 		EA82ADEC1F83B6DC000D2E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EACBB1B21F91064C00A72AFC /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,8 +382,8 @@
 		EA53B83D1F84CE6E00A08A13 /* NYTimes */ = {
 			isa = PBXGroup;
 			children = (
+				EACBB1B01F91063300A72AFC /* Storage */,
 				EA4D94E81F8D05500040E623 /* TopStories */,
-				EA2C67BA1F8B788100563773 /* CoreData */,
 				EA2C67B51F8B787700563773 /* Resources */,
 				EA53B83E1F84CE6E00A08A13 /* AppDelegate.swift */,
 				EA53B8571F84CE6E00A08A13 /* Assets.xcassets */,
@@ -428,6 +430,23 @@
 				EA82ADEC1F83B6DC000D2E19 /* Info.plist */,
 			);
 			path = NYTimesTests;
+			sourceTree = "<group>";
+		};
+		EACBB1B01F91063300A72AFC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				EACBB1B11F91063B00A72AFC /* Realm */,
+				EA2C67BA1F8B788100563773 /* CoreData */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		EACBB1B11F91063B00A72AFC /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				EACBB1B21F91064C00A72AFC /* RealmManager.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -634,6 +653,7 @@
 				EA4D95261F8D08920040E623 /* TopStoriesRemoteGateway.swift in Sources */,
 				EA4D951F1F8D088A0040E623 /* BookmarkedStory+CoreDataClass.swift in Sources */,
 				EA2C68711F8B7EAD00563773 /* CoreDataStack+Bookmarks.swift in Sources */,
+				EACBB1B31F91064C00A72AFC /* RealmManager.swift in Sources */,
 				EA4D95311F8D08A40040E623 /* StoryDetailsViewController.swift in Sources */,
 				EA4D95381F8D08BF0040E623 /* CommonImageView.swift in Sources */,
 				EA4D95221F8D088A0040E623 /* Story+CoreDataClass.swift in Sources */,

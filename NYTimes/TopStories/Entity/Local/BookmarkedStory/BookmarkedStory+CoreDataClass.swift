@@ -6,9 +6,13 @@
 //
 
 import Foundation
-import CoreData
-
-public class BookmarkedStory: NSManagedObject  {
-    
+import RealmSwift
+public class BookmarkedStory: Object  {
+	@objc dynamic var title : String!
+	@objc dynamic var imgUrl : String?
+	@objc dynamic var item_type : String?
+	@objc dynamic var published_date : String!
+	@objc dynamic var abstract : String!
+	@objc dynamic var storyLink : String?
 }
 

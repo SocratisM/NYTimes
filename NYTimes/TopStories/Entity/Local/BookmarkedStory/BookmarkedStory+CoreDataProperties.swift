@@ -8,14 +8,15 @@
 import Foundation
 import CoreData
 
-extension BookmarkedStory: StoryProtocol {
-    @nonobjc static func fetchRequest() -> NSFetchRequest<Story> {
-        return NSFetchRequest<Story>(entityName: "BookmarkedStory");
-    }
-    @NSManaged var title : String
-    @NSManaged var imgUrl : String?
-    @NSManaged var item_type : String?
-    @NSManaged var published_date : String
-    @NSManaged var abstract : String
-    @NSManaged var storyLink : String?
-}
+//extension BookmarkedStory: StoryProtocol {
+//    @nonobjc static func fetchRequest() -> NSFetchRequest<Story> {
+//        return NSFetchRequest<Story>(entityName: "BookmarkedStory");
+//    }
+//    @NSManaged var title : String
+//    @NSManaged var imgUrl : String?
+//    @NSManaged var item_type : String?
+//    @NSManaged var published_date : String
+//    @NSManaged var abstract : String
+//    @NSManaged var storyLink : String?
+//}
+
