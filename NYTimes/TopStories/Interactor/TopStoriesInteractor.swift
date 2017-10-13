@@ -27,18 +27,22 @@ class TopStoriesInteractor: NSObject {
 extension TopStoriesInteractor: TopStoriesInteractorProtocol {
     func fetchTopStories() {
         fetchedResultsController.delegate = self
-        loadLocalStories()
+		DispatchQueue.global().async {
+        self.loadLocalStories()
         //fetch any remove stories and parse into local stories
-        remoteGateway.fetchTopStories(completion: {(stories, error) in
+			self.remoteGateway.fetchTopStories(completion: {(stories, error) in
             guard error == nil else {
+				DispatchQueue.main.async {
                 self.presenter?.presentError(title: "Error", error: error!)
-                return
+				}
+				return
             }
             guard let remoteStories = stories else {
                 return
             }
             CoreDataStack.sharedInstance.saveInCoreDataWith(jsonArray: remoteStories)
         })
+		}
     }
     
     func loadLocalStories() {

@@ -27,8 +27,10 @@ extension TopStoriesRemoteGateway: TopStoriesRemoteGatewayProtocol {
                     //Todo: use localized strings for generic descriptions
                     let userInfo = [NSLocalizedDescriptionKey: "Check your internet connection"]
                     let error = NSError(domain: "fetchTopStories.connection.error", code: 0, userInfo: userInfo)
+					DispatchQueue.main.async(execute: {
                     completion(nil, error)
-                    return
+					})
+					return
                 }
                 self.handleResponse(dataResponse, completion)
 		}
@@ -39,8 +41,10 @@ extension TopStoriesRemoteGateway: TopStoriesRemoteGatewayProtocol {
             //Todo: use localized strings for generic descriptions
             let userInfo = [NSLocalizedDescriptionKey: "A generic error has occured"]
             let genericError = NSError(domain: "fetchTopStories.generic.error", code: 1, userInfo: userInfo)
-            //Todo: parse dataResponse.error in a  custom error class
+			DispatchQueue.main.async {
+			//Todo: parse dataResponse.error in a  custom error class
 			completion(nil, genericError)
+			}
 			return
 		}
 		let json = JSON(data: data)
