@@ -7,7 +7,8 @@
 
 import Foundation
 import RealmSwift
-public class BookmarkedStory: Object  {
+
+public class BookmarkedStory: Object, StoryProtocol  {
 	@objc dynamic var title : String!
 	@objc dynamic var imgUrl : String?
 	@objc dynamic var item_type : String?

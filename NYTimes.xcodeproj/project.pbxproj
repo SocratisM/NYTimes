@@ -9,20 +9,14 @@
 /* Begin PBXBuildFile section */
 		C202AABFACD47B4E36445370 /* Pods_NYTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B62C84BF01090EA43372EE2 /* Pods_NYTimes.framework */; };
 		EA2C681C1F8B7D9200563773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2C67B61F8B787700563773 /* Main.storyboard */; };
-		EA2C68711F8B7EAD00563773 /* CoreDataStack+Bookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C67BB1F8B788100563773 /* CoreDataStack+Bookmarks.swift */; };
-		EA2C68721F8B7EB200563773 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C67BD1F8B788100563773 /* CoreDataStack.swift */; };
-		EA2C68731F8B7EB500563773 /* CoreDataStack+TopStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C67BC1F8B788100563773 /* CoreDataStack+TopStories.swift */; };
 		EA2C68741F8B7EBF00563773 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C681A1F8B7D4300563773 /* Connection.swift */; };
 		EA2C68751F8B7EC200563773 /* ImageCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA53B8621F84CE6E00A08A13 /* ImageCachable.swift */; };
 		EA2C68771F8B7F1A00563773 /* TopStoriesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA2C67B81F8B787700563773 /* TopStoriesModel.xcdatamodeld */; };
 		EA2C68781F8B7FD800563773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA53B83E1F84CE6E00A08A13 /* AppDelegate.swift */; };
 		EA4D951D1F8D087E0040E623 /* NYTimesConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94EA1F8D05500040E623 /* NYTimesConnector.swift */; };
 		EA4D951E1F8D08840040E623 /* StoryJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94F61F8D05510040E623 /* StoryJSON.swift */; };
-		EA4D951F1F8D088A0040E623 /* BookmarkedStory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94EE1F8D05500040E623 /* BookmarkedStory+CoreDataClass.swift */; };
-		EA4D95201F8D088A0040E623 /* BookmarkedStory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94EF1F8D05500040E623 /* BookmarkedStory+CoreDataProperties.swift */; };
+		EA4D951F1F8D088A0040E623 /* BookmarkedStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94EE1F8D05500040E623 /* BookmarkedStory.swift */; };
 		EA4D95211F8D088A0040E623 /* StoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94F11F8D05500040E623 /* StoryProtocol.swift */; };
-		EA4D95221F8D088A0040E623 /* Story+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94F31F8D05500040E623 /* Story+CoreDataClass.swift */; };
-		EA4D95231F8D088A0040E623 /* Story+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94F41F8D05500040E623 /* Story+CoreDataProperties.swift */; };
 		EA4D95241F8D08920040E623 /* TopStoriesLocalGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94F91F8D05510040E623 /* TopStoriesLocalGateway.swift */; };
 		EA4D95251F8D08920040E623 /* TopStoriesLocalGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94FA1F8D05510040E623 /* TopStoriesLocalGatewayProtocol.swift */; };
 		EA4D95261F8D08920040E623 /* TopStoriesRemoteGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D94FC1F8D05510040E623 /* TopStoriesRemoteGateway.swift */; };
@@ -51,6 +45,12 @@
 		EA53B8781F84CEA500A08A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA53B8571F84CE6E00A08A13 /* Assets.xcassets */; };
 		EA82ADEB1F83B6DC000D2E19 /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82ADEA1F83B6DC000D2E19 /* NYTimesTests.swift */; };
 		EACBB1B31F91064C00A72AFC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1B21F91064C00A72AFC /* RealmManager.swift */; };
+		EACBB1B51F94AB8400A72AFC /* Realm+Bookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1B41F94AB8400A72AFC /* Realm+Bookmarks.swift */; };
+		EACBB1B71F94ABBA00A72AFC /* Realm+TopStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1B61F94ABBA00A72AFC /* Realm+TopStories.swift */; };
+		EACBB1BC1F94B2E000A72AFC /* CoreDataStack+TopStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1BA1F94B27F00A72AFC /* CoreDataStack+TopStories.swift */; };
+		EACBB1BD1F94B2E000A72AFC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1BB1F94B27F00A72AFC /* CoreDataStack.swift */; };
+		EACBB1C01F94B31C00A72AFC /* Story+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1BE1F94B31B00A72AFC /* Story+CoreDataClass.swift */; };
+		EACBB1C11F94B31C00A72AFC /* Story+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1BF1F94B31C00A72AFC /* Story+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,16 +70,10 @@
 		BF1ADD31A5B1041F7F6245D1 /* Pods-NYTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYTimes/Pods-NYTimes.debug.xcconfig"; sourceTree = "<group>"; };
 		EA2C67B71F8B787700563773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA2C67B91F8B787700563773 /* TopStoriesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TopStoriesModel.xcdatamodel; sourceTree = "<group>"; };
-		EA2C67BB1F8B788100563773 /* CoreDataStack+Bookmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStack+Bookmarks.swift"; sourceTree = "<group>"; };
-		EA2C67BC1F8B788100563773 /* CoreDataStack+TopStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStack+TopStories.swift"; sourceTree = "<group>"; };
-		EA2C67BD1F8B788100563773 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		EA2C681A1F8B7D4300563773 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		EA4D94EA1F8D05500040E623 /* NYTimesConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesConnector.swift; sourceTree = "<group>"; };
-		EA4D94EE1F8D05500040E623 /* BookmarkedStory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookmarkedStory+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EA4D94EF1F8D05500040E623 /* BookmarkedStory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookmarkedStory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EA4D94EE1F8D05500040E623 /* BookmarkedStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedStory.swift; sourceTree = "<group>"; };
 		EA4D94F11F8D05500040E623 /* StoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryProtocol.swift; sourceTree = "<group>"; };
-		EA4D94F31F8D05500040E623 /* Story+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EA4D94F41F8D05500040E623 /* Story+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EA4D94F61F8D05510040E623 /* StoryJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryJSON.swift; sourceTree = "<group>"; };
 		EA4D94F91F8D05510040E623 /* TopStoriesLocalGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesLocalGateway.swift; sourceTree = "<group>"; };
 		EA4D94FA1F8D05510040E623 /* TopStoriesLocalGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesLocalGatewayProtocol.swift; sourceTree = "<group>"; };
@@ -115,6 +109,12 @@
 		EA82ADEA1F83B6DC000D2E19 /* NYTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTests.swift; sourceTree = "<group>"; };
 		EA82ADEC1F83B6DC000D2E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EACBB1B21F91064C00A72AFC /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		EACBB1B41F94AB8400A72AFC /* Realm+Bookmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Bookmarks.swift"; sourceTree = "<group>"; };
+		EACBB1B61F94ABBA00A72AFC /* Realm+TopStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+TopStories.swift"; sourceTree = "<group>"; };
+		EACBB1BA1F94B27F00A72AFC /* CoreDataStack+TopStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStack+TopStories.swift"; sourceTree = "<group>"; };
+		EACBB1BB1F94B27F00A72AFC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		EACBB1BE1F94B31B00A72AFC /* Story+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EACBB1BF1F94B31C00A72AFC /* Story+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,16 +163,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		EA2C67BA1F8B788100563773 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				EA2C67BB1F8B788100563773 /* CoreDataStack+Bookmarks.swift */,
-				EA2C67BC1F8B788100563773 /* CoreDataStack+TopStories.swift */,
-				EA2C67BD1F8B788100563773 /* CoreDataStack.swift */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
 		EA4D94E81F8D05500040E623 /* TopStories */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,8 +206,7 @@
 		EA4D94ED1F8D05500040E623 /* BookmarkedStory */ = {
 			isa = PBXGroup;
 			children = (
-				EA4D94EE1F8D05500040E623 /* BookmarkedStory+CoreDataClass.swift */,
-				EA4D94EF1F8D05500040E623 /* BookmarkedStory+CoreDataProperties.swift */,
+				EA4D94EE1F8D05500040E623 /* BookmarkedStory.swift */,
 			);
 			path = BookmarkedStory;
 			sourceTree = "<group>";
@@ -233,8 +222,8 @@
 		EA4D94F21F8D05500040E623 /* Story */ = {
 			isa = PBXGroup;
 			children = (
-				EA4D94F31F8D05500040E623 /* Story+CoreDataClass.swift */,
-				EA4D94F41F8D05500040E623 /* Story+CoreDataProperties.swift */,
+				EACBB1BE1F94B31B00A72AFC /* Story+CoreDataClass.swift */,
+				EACBB1BF1F94B31C00A72AFC /* Story+CoreDataProperties.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -435,8 +424,8 @@
 		EACBB1B01F91063300A72AFC /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				EACBB1B81F94B27F00A72AFC /* CoreData */,
 				EACBB1B11F91063B00A72AFC /* Realm */,
-				EA2C67BA1F8B788100563773 /* CoreData */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -445,8 +434,19 @@
 			isa = PBXGroup;
 			children = (
 				EACBB1B21F91064C00A72AFC /* RealmManager.swift */,
+				EACBB1B41F94AB8400A72AFC /* Realm+Bookmarks.swift */,
+				EACBB1B61F94ABBA00A72AFC /* Realm+TopStories.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		EACBB1B81F94B27F00A72AFC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EACBB1BA1F94B27F00A72AFC /* CoreDataStack+TopStories.swift */,
+				EACBB1BB1F94B27F00A72AFC /* CoreDataStack.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,45 +618,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACBB1B71F94ABBA00A72AFC /* Realm+TopStories.swift in Sources */,
 				EA4D95351F8D08A70040E623 /* BookmarksViewController.swift in Sources */,
 				EA4D95371F8D08AF0040E623 /* StoryTableViewCell.swift in Sources */,
 				EA4D95331F8D08A40040E623 /* TopStoriesViewController.swift in Sources */,
 				EA4D95321F8D08A40040E623 /* TopStoriesView+DataSource.swift in Sources */,
 				EA2C68781F8B7FD800563773 /* AppDelegate.swift in Sources */,
-				EA4D95201F8D088A0040E623 /* BookmarkedStory+CoreDataProperties.swift in Sources */,
 				EA4D95281F8D08990040E623 /* TopStoriesInteractor.swift in Sources */,
 				EA4D952F1F8D08A40040E623 /* StoryDisplayDelegate.swift in Sources */,
 				EA4D952B1F8D08990040E623 /* TopStoriesEventHandlerProtocol.swift in Sources */,
 				EA2C68751F8B7EC200563773 /* ImageCachable.swift in Sources */,
 				EA4D95301F8D08A40040E623 /* ViewAlertProtocol.swift in Sources */,
-				EA2C68721F8B7EB200563773 /* CoreDataStack.swift in Sources */,
 				EA2C68741F8B7EBF00563773 /* Connection.swift in Sources */,
 				EA4D95211F8D088A0040E623 /* StoryProtocol.swift in Sources */,
 				EA4D953B1F8D08C20040E623 /* BookmarkCollectionViewCell.swift in Sources */,
 				EA4D952C1F8D08990040E623 /* TopStoriesPresenter.swift in Sources */,
 				EA2C68771F8B7F1A00563773 /* TopStoriesModel.xcdatamodeld in Sources */,
-				EA4D95231F8D088A0040E623 /* Story+CoreDataProperties.swift in Sources */,
 				EA4D95391F8D08BF0040E623 /* CommonLabel.swift in Sources */,
 				EA4D953A1F8D08C20040E623 /* BookmarkCollectionViewCell+UI.swift in Sources */,
 				EA4D95271F8D08920040E623 /* TopStoriesRemoteGatewayProtocol.swift in Sources */,
+				EACBB1B51F94AB8400A72AFC /* Realm+Bookmarks.swift in Sources */,
 				EA4D95291F8D08990040E623 /* TopStoriesInteractorProtocol.swift in Sources */,
+				EACBB1C11F94B31C00A72AFC /* Story+CoreDataProperties.swift in Sources */,
 				EA4D95361F8D08AF0040E623 /* StoryTableViewCell+UI.swift in Sources */,
 				EA4D951E1F8D08840040E623 /* StoryJSON.swift in Sources */,
 				EA4D952E1F8D08A40040E623 /* StoryDisplayData.swift in Sources */,
+				EACBB1BC1F94B2E000A72AFC /* CoreDataStack+TopStories.swift in Sources */,
 				EA4D952D1F8D08990040E623 /* TopStoriesPresenterProtocol.swift in Sources */,
 				EA4D951D1F8D087E0040E623 /* NYTimesConnector.swift in Sources */,
+				EACBB1BD1F94B2E000A72AFC /* CoreDataStack.swift in Sources */,
 				EA4D952A1F8D08990040E623 /* FetchedResultsControllerProtocol.swift in Sources */,
 				EA4D95341F8D08A40040E623 /* TopStoriesViewProtocol.swift in Sources */,
 				EA4D95251F8D08920040E623 /* TopStoriesLocalGatewayProtocol.swift in Sources */,
-				EA2C68731F8B7EB500563773 /* CoreDataStack+TopStories.swift in Sources */,
 				EA4D95241F8D08920040E623 /* TopStoriesLocalGateway.swift in Sources */,
 				EA4D95261F8D08920040E623 /* TopStoriesRemoteGateway.swift in Sources */,
-				EA4D951F1F8D088A0040E623 /* BookmarkedStory+CoreDataClass.swift in Sources */,
-				EA2C68711F8B7EAD00563773 /* CoreDataStack+Bookmarks.swift in Sources */,
+				EA4D951F1F8D088A0040E623 /* BookmarkedStory.swift in Sources */,
 				EACBB1B31F91064C00A72AFC /* RealmManager.swift in Sources */,
 				EA4D95311F8D08A40040E623 /* StoryDetailsViewController.swift in Sources */,
 				EA4D95381F8D08BF0040E623 /* CommonImageView.swift in Sources */,
-				EA4D95221F8D088A0040E623 /* Story+CoreDataClass.swift in Sources */,
+				EACBB1C01F94B31C00A72AFC /* Story+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

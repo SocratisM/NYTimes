@@ -13,15 +13,8 @@ class BookmarksViewController: UIViewController, UICollectionViewDataSource {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	let cellReuseIdentifier = "BookmarkCollectionViewCell"
-	//realm setup
-	var notificationToken: NotificationToken?
-	//let realm = try! Realm()
+	var notificationToken: NotificationToken? 	//realm updates
 	fileprivate var bookmarkedStories = RealmManager.sharedInstance.bookmarkedStories
-	//    fileprivate var bookmarkedStories: [Results<BookmarkedStory>] = [] {
-	//        didSet {
-	//            collectionView.reloadData()
-	//        }
-	//    }
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -61,7 +54,7 @@ class BookmarksViewController: UIViewController, UICollectionViewDataSource {
 		
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookmarkCollectionViewCell", for: indexPath) as! BookmarkCollectionViewCell
 		let bookmarkedStory = bookmarkedStories[indexPath.row]
-		let displayData = StoryDisplayData(story: bookmarkedStory as! StoryProtocol)
+		let displayData = StoryDisplayData(story: bookmarkedStory as StoryProtocol)
 		cell.setUpWith(displayData)
 		return cell
 	}

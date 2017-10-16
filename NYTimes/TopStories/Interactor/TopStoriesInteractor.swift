@@ -54,7 +54,7 @@ extension TopStoriesInteractor: TopStoriesInteractorProtocol {
             return
         }
     }
-    
+
     func getLocalStories() -> [Story] {
         guard let stories = localGateway.fetchedResultController.fetchedObjects as? [Story] else {
             return [Story]()

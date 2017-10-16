@@ -25,7 +25,7 @@ class StoryDetailsViewController: UIViewController, ViewAlertProtocol {
 	@IBAction func bookmarkButtonTapped(_ sender: Any) {
 		let alert = UIAlertController(title: "Error", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.alert)
 		
-		let isBookmarked = CoreDataStack.sharedInstance.isAlreadyBookmarked(storyTitle: currentStory.title)
+		let isBookmarked = RealmManager.sharedInstance.isBookmarked(storyTitle: currentStory.title)
 		
 		if(!isBookmarked) {
 			
@@ -48,9 +48,10 @@ class StoryDetailsViewController: UIViewController, ViewAlertProtocol {
 					alert.message = error?.localizedDescription
 				}
 			})
-			setBookmarkButton()
-			showAlertController(controller: alert, completion: nil)
+
 		}
+		setBookmarkButton()
+		showAlertController(controller: alert, completion: nil)
 	}
 	
 	func showAlertController(controller alert: UIAlertController, completion: (() -> Void)?) {
@@ -91,7 +92,7 @@ fileprivate extension StoryDetailsViewController {
 	}
 	
 	fileprivate func setBookmarkButton() {
-		let isBookmarked = CoreDataStack.sharedInstance.isAlreadyBookmarked(storyTitle: currentStory.title)
+		let isBookmarked = RealmManager.sharedInstance.isBookmarked(storyTitle: currentStory.title)
 		if(isBookmarked) {
 			bookmarkButton.setTitle("Remove bookmark", for: .normal)
 		}

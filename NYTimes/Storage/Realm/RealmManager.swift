@@ -14,37 +14,16 @@ class RealmManager: NSObject {
 	static let sharedInstance = RealmManager()
 	let realm = try! Realm()
 	var bookmarkedStories = try! Realm().objects(BookmarkedStory.self).sorted(byKeyPath: "title")
+	//var topStories = try! Realm().objects(Story.self).sorted(byKeyPath: "title")
 	
-	private override init() {
+	private override init() { }
 		
-	}
-	
-	func addBookmark(story: StoryProtocol, completion: @escaping (Error?) -> ()) {
-		realm.beginWrite()
-		realm.create(BookmarkedStory.self, value: [story.title, story.imgUrl, story.item_type, story.published_date, story.abstract, story.storyLink	])
-		do{
-			try realm.commitWrite()
-			completion(nil)
-		}
-		catch {
-			completion(RealmError("Realm failed to commitWrite()"))
-		}
-	}
-	
-	func removeBookmarks(stories: [StoryProtocol], completion: @escaping (Error?) -> ()) {
-		//fetch bookmarks
-		let ids = bookmarkedStories.map { $0.title }
-		realm.beginWrite()
-		let objectsToDelete = realm.objects(BookmarkedStory.self).filter("title IN %@", ids)
-		realm.delete(objectsToDelete)
-		do {
-			try realm.commitWrite()
-			completion(nil)
-		}
-		catch {
-			completion(RealmError("Realm failed to commitWrite()"))
-		}
-	}
+		// MARK: Clear All Top Stories Records
+//		func clearData()  {
+//			try! realm.write {
+//				realm.delete(topStories)
+//			}
+//		}
 }
 
 struct RealmError: Error {
