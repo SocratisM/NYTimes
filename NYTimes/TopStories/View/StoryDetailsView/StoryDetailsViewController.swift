@@ -18,6 +18,7 @@ class StoryDetailsViewController: UIViewController, ViewAlertProtocol {
 	var currentStory: StoryProtocol!
 	
 	override func viewDidLoad() {
+		assertDependencies()
 		setupUI()
 	}
 	
@@ -99,5 +100,14 @@ fileprivate extension StoryDetailsViewController {
 		else {
 			bookmarkButton.setTitle("Add bookmark", for: .normal)
 		}
+	}
+}
+
+extension StoryDetailsViewController: Injectable {
+	func inject(item: StoryProtocol) {
+		currentStory = item
+	}
+	func assertDependencies() {
+		assert(currentStory != nil)
 	}
 }

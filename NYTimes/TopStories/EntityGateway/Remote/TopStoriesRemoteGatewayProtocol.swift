@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol TopStoriesRemoteGatewayProtocol: class {
-	func fetchTopStories(completion: @escaping ([StoryJSON]? , Error?) -> ())
-}
+protocol TopStoriesRemoteGatewayProtocol: Gettable { }
+
+

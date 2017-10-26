@@ -16,7 +16,7 @@ class NYTimesConnector {
     
     fileprivate let storyboardName = "Main"
     
-    lazy fileprivate var topStoriesRemoteGateway: TopStoriesRemoteGatewayProtocol  = {
+	lazy fileprivate var topStoriesRemoteGateway: TopStoriesRemoteGateway = {
         return TopStoriesRemoteGateway()
     }()
     lazy fileprivate var topStoriesLocalGateway: TopStoriesLocalGatewayProtocol  = {

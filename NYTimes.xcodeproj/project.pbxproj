@@ -43,6 +43,8 @@
 		EA4D953B1F8D08C20040E623 /* BookmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D95161F8D05510040E623 /* BookmarkCollectionViewCell.swift */; };
 		EA53B8761F84CE9F00A08A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA53B8581F84CE6E00A08A13 /* LaunchScreen.storyboard */; };
 		EA53B8781F84CEA500A08A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA53B8571F84CE6E00A08A13 /* Assets.xcassets */; };
+		EA569AAE1FA0E02200D9E60C /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA569AAD1FA0E02200D9E60C /* Injectable.swift */; };
+		EA569AB01FA1F0D000D9E60C /* Gettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA569AAF1FA1F0D000D9E60C /* Gettable.swift */; };
 		EA82ADEB1F83B6DC000D2E19 /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82ADEA1F83B6DC000D2E19 /* NYTimesTests.swift */; };
 		EACBB1B31F91064C00A72AFC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1B21F91064C00A72AFC /* RealmManager.swift */; };
 		EACBB1B51F94AB8400A72AFC /* Realm+Bookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACBB1B41F94AB8400A72AFC /* Realm+Bookmarks.swift */; };
@@ -104,6 +106,8 @@
 		EA53B8591F84CE6E00A08A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA53B8601F84CE6E00A08A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA53B8621F84CE6E00A08A13 /* ImageCachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCachable.swift; sourceTree = "<group>"; };
+		EA569AAD1FA0E02200D9E60C /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		EA569AAF1FA1F0D000D9E60C /* Gettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gettable.swift; sourceTree = "<group>"; };
 		EA82ADD01F83B6DC000D2E19 /* NYTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA82ADE61F83B6DC000D2E19 /* NYTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA82ADEA1F83B6DC000D2E19 /* NYTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTests.swift; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 			children = (
 				EA4D94FC1F8D05510040E623 /* TopStoriesRemoteGateway.swift */,
 				EA4D94FD1F8D05510040E623 /* TopStoriesRemoteGatewayProtocol.swift */,
+				EA569AAF1FA1F0D000D9E60C /* Gettable.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				EA4D950A1F8D05510040E623 /* StoryDisplayData.swift */,
 				EA4D950B1F8D05510040E623 /* StoryDisplayDelegate.swift */,
 				EA4D950C1F8D05510040E623 /* ViewAlertProtocol.swift */,
+				EA569AAD1FA0E02200D9E60C /* Injectable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -631,6 +637,7 @@
 				EA4D95301F8D08A40040E623 /* ViewAlertProtocol.swift in Sources */,
 				EA2C68741F8B7EBF00563773 /* Connection.swift in Sources */,
 				EA4D95211F8D088A0040E623 /* StoryProtocol.swift in Sources */,
+				EA569AB01FA1F0D000D9E60C /* Gettable.swift in Sources */,
 				EA4D953B1F8D08C20040E623 /* BookmarkCollectionViewCell.swift in Sources */,
 				EA4D952C1F8D08990040E623 /* TopStoriesPresenter.swift in Sources */,
 				EA2C68771F8B7F1A00563773 /* TopStoriesModel.xcdatamodeld in Sources */,
@@ -646,6 +653,7 @@
 				EACBB1BC1F94B2E000A72AFC /* CoreDataStack+TopStories.swift in Sources */,
 				EA4D952D1F8D08990040E623 /* TopStoriesPresenterProtocol.swift in Sources */,
 				EA4D951D1F8D087E0040E623 /* NYTimesConnector.swift in Sources */,
+				EA569AAE1FA0E02200D9E60C /* Injectable.swift in Sources */,
 				EACBB1BD1F94B2E000A72AFC /* CoreDataStack.swift in Sources */,
 				EA4D952A1F8D08990040E623 /* FetchedResultsControllerProtocol.swift in Sources */,
 				EA4D95341F8D08A40040E623 /* TopStoriesViewProtocol.swift in Sources */,

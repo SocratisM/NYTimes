@@ -61,7 +61,7 @@ class TopStoriesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "storyDetailsSegue") {
             let storyDetailsController = segue.destination as! StoryDetailsViewController
-            storyDetailsController.currentStory = selectedStory
+			storyDetailsController.inject(item: selectedStory)
         }
     }
     
