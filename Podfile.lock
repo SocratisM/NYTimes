@@ -3,6 +3,7 @@ PODS:
   - AlamofireSwiftyJSON (1.0.0):
     - Alamofire (~> 4.0)
     - SwiftyJSON (~> 3.0)
+  - Onboard (2.3.1)
   - Realm (3.0.0-rc.1):
     - Realm/Headers (= 3.0.0-rc.1)
   - Realm/Headers (3.0.0-rc.1)
@@ -10,12 +11,15 @@ PODS:
     - Realm (= 3.0.0-rc.1)
   - SnapKit (3.2.0)
   - SwiftyJSON (3.1.4)
+  - UIWindowTransitions (0.1.1)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireSwiftyJSON
+  - Onboard
   - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
   - SnapKit (~> 3.2.0)
+  - UIWindowTransitions
 
 EXTERNAL SOURCES:
   RealmSwift:
@@ -32,11 +36,13 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireSwiftyJSON: 78908b766483a28aa5cc90fd191a687467042973
+  Onboard: b6871f25ac753175b2ab9a362fb2feb26a81a311
   Realm: f79164edf2fb3807debe2fd2132ae15ed642d0a6
   RealmSwift: c72cb54a1f60158f1b1172cca2d81748fd88cf10
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UIWindowTransitions: 95836d4d85b824227909ada40a2cbf885eb26c69
 
-PODFILE CHECKSUM: a8e4857bef738f873724a6b3c1337cf4cce3fd29
+PODFILE CHECKSUM: 5f94ca94e05219995979e1e38552a3a6de643b75
 
 COCOAPODS: 1.4.0.beta.1
